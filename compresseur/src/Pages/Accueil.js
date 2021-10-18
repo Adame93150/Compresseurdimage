@@ -6,7 +6,7 @@ import Navigation from '../Component/Navigation';
 const Accueil = () => {
     return (
         <div>
-         pimhnpi*
+         <h1>Accueil</h1>
          <Navigation></Navigation>
         </div>
     );

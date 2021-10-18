@@ -5,9 +5,9 @@ const Navigation = () => {
     return (
         <div className="navigation">
                 
-            <NavLink exact to="/"> Accueil </NavLink>
-            <NavLink exact to ="Compressor"> Compresseur </NavLink>
-            <NavLink exact to ="caca">caca</NavLink>
+            <NavLink exact to="/" activeClassName="nav-active"> Accueil </NavLink>
+            <NavLink exact to ="c-compressor" activeClassName="nav-active"> Compresseur </NavLink>
+            
             
         </div>
     );
