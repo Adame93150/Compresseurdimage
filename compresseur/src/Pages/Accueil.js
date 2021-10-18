@@ -1,11 +1,13 @@
 import React from 'react';
-import Compresseur from '../Component/Compresseur';
+import Navigation from '../Component/Navigation';
+
 
 
 const Accueil = () => {
     return (
         <div>
-        <Compresseur></Compresseur>
+         pimhnpi*
+         <Navigation></Navigation>
         </div>
     );
 };
