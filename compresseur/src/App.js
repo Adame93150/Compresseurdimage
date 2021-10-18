@@ -1,10 +1,11 @@
+import Accueil from "./Pages/Accueil";
 
 
 
 function App() {
   return (
     <div className="App">
-      <App></App>
+      <Accueil/>
     </div>
   );
 }
