@@ -1,15 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink } from 'mdb-react-ui-kit';
-
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 const NAV = () => {
     return (
       
-      <MDBDropdown className="menu">
+     
+    
+       <MDBDropdown className="menu">
       <MDBDropdownToggle tag='a' className='btn btn-primary'>
       Menu
       </MDBDropdownToggle>
+      <MDBBtn href="SignIn">Sign In</MDBBtn>
+      <MDBBtn href="SignUp">Sign Up</MDBBtn>
       <MDBDropdownMenu>
       <MDBDropdownItem>
           <MDBDropdownLink href="/">Accueil</MDBDropdownLink>
@@ -26,6 +30,8 @@ const NAV = () => {
         
       </MDBDropdownMenu>
     </MDBDropdown>
+      
+      
     );
 };
 
