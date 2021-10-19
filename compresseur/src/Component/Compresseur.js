@@ -20,12 +20,14 @@ function Compresseur() {
   const handle = (e) => {
 
     const imageFile = e.target.files[0];
+    
 
     setOrigImage(imageFile);
 
     setOrigImageFile(URL.createObjectURL(imageFile));
 
     setFileName(imageFile.name);
+
 
   };
 
