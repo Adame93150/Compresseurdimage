@@ -6,8 +6,8 @@ import NAV from '../Component/NAV';
 
 const Compressor = () => {
     return (
-        <div> 
-            <h1>Compresseur</h1> 
+        <div > 
+            
         <NAV/>
         <Compresseur/>
         

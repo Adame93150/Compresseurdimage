@@ -7,7 +7,7 @@ import NAV from '../Component/NAV';
 const Convertisseur = () => {
     return (
         <div>
-            <h1>Convertisseur</h1>
+            
             <NAV></NAV>
             <Icon></Icon>
       

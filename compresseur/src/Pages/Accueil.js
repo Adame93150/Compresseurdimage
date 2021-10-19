@@ -1,12 +1,16 @@
 import React from 'react';
 import logo from '../img/logo.png'
 import Navigation from '../Component/Navigation';
+import NAV from '../Component/NAV';
 
 
 
 const Accueil = () => {
     return (
+        
         <div className="Acceuil">
+           
+            <NAV></NAV>
         <img className="imagelogo" src={logo} alt="logo" />
         <p className="paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Vivamus pharetra ante nec erat porttitor fermentum. 
