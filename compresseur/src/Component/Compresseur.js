@@ -83,7 +83,7 @@ function Compresseur() {
 
       <h1></h1>
 
-      <Container>
+      <Container className="conteneur">
 
         <Grid>
 

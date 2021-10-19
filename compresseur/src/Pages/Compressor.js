@@ -7,7 +7,7 @@ const Compressor = () => {
     return (
         <div> 
             <h1>Compresseur</h1> 
-        <Navigation></Navigation>
+        
         <Compresseur/>
         
         
