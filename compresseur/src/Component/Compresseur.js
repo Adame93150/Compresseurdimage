@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Grid, Image, Item, Button } from "semantic-ui-react";
 import imageCompression from "browser-image-compression";
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 
 
@@ -87,9 +88,9 @@ function Compresseur() {
 
         <Grid>
 
-          <Grid.Column width={6}>
+          <Grid.Column  width={6}>
 
-            <Item>
+            <Item className="imgup">
 
               {origImageFile ? (
 
@@ -97,7 +98,7 @@ function Compresseur() {
 
               ) : (
 
-                <Image src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
+                <Image src=""></Image>
 
               )}
 
@@ -122,8 +123,8 @@ function Compresseur() {
             <h1></h1>
 
             {origImageFile && (
-
-              <Button
+                
+                <MDBBtn
 
                 primary
 
@@ -139,15 +140,37 @@ function Compresseur() {
 
                 Compress Image
 
-              </Button>
+                </MDBBtn>
 
             )}
 
             <h1></h1>
 
-            {compressedImage && (
+            
 
-              <Button>
+          </Grid.Column>
+
+          <Grid.Column   width={6}>
+
+            <Item className="imgup">
+
+              {compressedImage ? (
+
+                <Image src={compressedImage}></Image>
+
+              ) : (
+
+                <Image src=""></Image>
+
+              )}
+
+            </Item>
+
+          </Grid.Column>
+
+          {compressedImage && (
+
+            <MDBBtn>
 
                 <a href={compressedImage} download={fileName}>
 
@@ -157,29 +180,12 @@ function Compresseur() {
 
                 </a>
 
-              </Button>
+              </MDBBtn>
 
             )}
 
-          </Grid.Column>
 
-          <Grid.Column width={6}>
 
-            <Item>
-
-              {compressedImage ? (
-
-                <Image src={compressedImage}></Image>
-
-              ) : (
-
-                <Image src="http://navparivartan.in/wp-content/uploads/2018/11/placeholder.png"></Image>
-
-              )}
-
-            </Item>
-
-          </Grid.Column>
 
         </Grid>
 
