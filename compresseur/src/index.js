@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import "./Styles/index.scss"
+import 'mdb-react-ui-kit/dist/css/mdb.min.css'
 
 
 

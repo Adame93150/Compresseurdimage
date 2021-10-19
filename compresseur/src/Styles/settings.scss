@@ -15,25 +15,15 @@ $color-4: rgb(32, 35, 42);
 body {
   min-height: 100%;
   background: url('../img/paysage.jpg') no-repeat center center fixed;
- background-size: cover;
- 
+  background-size: cover;
+  
   margin: 0.4rem auto;
-  max-width: 1296px;
+  
   font-family: $font-1;
   
   
 }
-li {
-  list-style-type: none;
-}
-a {
-  text-decoration: none;
-  color: $color-3;
-  cursor: pointer;
-}
-a:visited {
-  color: $color-3;
-}
+
 h1{
     text-align: center;
     display: block;
