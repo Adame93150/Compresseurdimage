@@ -8,6 +8,9 @@ const NAV = () => {
         Menu
       </MDBDropdownToggle>
       <MDBDropdownMenu>
+      <MDBDropdownItem>
+          <MDBDropdownLink href="/">Accueil</MDBDropdownLink>
+        </MDBDropdownItem>
         <MDBDropdownItem>
           <MDBDropdownLink href="c-convertisseur">Convertisseur</MDBDropdownLink>
         </MDBDropdownItem>
