@@ -9,7 +9,7 @@ const signup = async (req, res) => {
     try {
         const username = req.body.username
         const password = bcryptjs.hashSync(req.body.password)
-        // const role = req.body.role
+      
 
         const user = await userModel.create({ username, password })
 
@@ -22,6 +22,8 @@ const signup = async (req, res) => {
 
 const login = async (req, res) => {
     try {
+
+        console.log('merci je sais');
         const username = req.body.username
         const user = await userModel.findOne({ username })
         const result = bcryptjs.compareSync(req.body.password, user.password)
@@ -37,8 +39,8 @@ const login = async (req, res) => {
                 {
                     expiresIn: 60 * 60
                 })
-
-            res.json({ message: "You're now login!", token })
+                console.log("blabla")
+            res.status(200).json({ message: "You're now login!", token })
         } else {
             res.status(401).json({ message: "Login failed" })
         }

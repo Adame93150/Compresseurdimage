@@ -14,6 +14,9 @@ import Signup from "./Pages/Signup";
 
 
 const App = () => {
+  const logout = () => {
+    localStorage.removeItem("token")
+}
   return (
     
        <BrowserRouter>

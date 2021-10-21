@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container, Grid, Image, Item, Button } from "semantic-ui-react";
+import { Container, Grid, Image, Item, } from "semantic-ui-react";
 import imageCompression from "browser-image-compression";
 import { MDBBtn } from 'mdb-react-ui-kit';
 
