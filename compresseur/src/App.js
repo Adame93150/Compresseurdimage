@@ -4,10 +4,11 @@ import Accueil from "./Pages/Accueil";
 
 import Compressor from "./Pages/Compressor";
 import Contact from "./Pages/Contact";
-import Convertisseur from "./Pages/Convertisseur";
+import Convertisseur from "./Pages/CompresseurV";
 import Notfound from "./Pages/Notfound";
 import SignIn from "./Pages/SignIn";
 import Signup from "./Pages/Signup";
+import CompresseurV from "./Pages/CompresseurV";
 
 
 
@@ -22,7 +23,7 @@ const App = () => {
        <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Accueil} />
-                <Route path="/c-convertisseur" exact component={Convertisseur} />
+                <Route path="/c-compresseurV" exact component={CompresseurV} />
                 <Route path="/c-compressor" exact component={Compressor}/>
                 <Route path="/Contact" exact component={Contact}/>
                 <Route path="/SignUp" exact component={Signup}/>

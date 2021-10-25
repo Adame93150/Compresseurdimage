@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react';
 import logo from '../img/logo.png'
 import NAV from '../Component/NAV';
 
-const Convertisseur = () => {
+const CompresseurV = () => {
     return (
         <div>
             <NAV></NAV>
@@ -16,4 +16,4 @@ const Convertisseur = () => {
     );
 };
 
-export default Convertisseur;
+export default CompresseurV;
