@@ -38,7 +38,6 @@ function Compresseur() {
     e.preventDefault();
 
 
-
     const options = {
 
       maxSizeMB: 1,
@@ -180,15 +179,15 @@ function Compresseur() {
 
                   Download Image
 
-                </a>
-
-              </MDBBtn>
-
-            )}
-
-
-
-
+                </a> 
+ 
+              </MDBBtn> 
+ 
+            )} 
+ 
+ 
+ 
+ 
         </Grid>
 
       </Container>
