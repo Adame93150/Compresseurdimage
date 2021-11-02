@@ -9,6 +9,8 @@ import Notfound from "./Pages/Notfound";
 import SignIn from "./Pages/SignIn";
 import Signup from "./Pages/Signup";
 import CompresseurV from "./Pages/CompresseurV";
+import mesImages from "./Pages/mesImages";
+
 
 
 
@@ -26,6 +28,7 @@ const App = () => {
                 <Route path="/c-compresseurV" exact component={CompresseurV} />
                 <Route path="/c-compressor" exact component={Compressor}/>
                 <Route path="/Contact" exact component={Contact}/>
+                <Route path="/m-mesImages" exact component={mesImages}/>
                 <Route path="/SignUp" exact component={Signup}/>
                 <Route path="/SignIn" exact component={SignIn}/>
                 <Route component={Notfound}/>

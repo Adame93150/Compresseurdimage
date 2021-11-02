@@ -14,12 +14,12 @@ const users = userModel.insertMany([
     
     {
         username: "mehdi",
-        password: "pouloulou",
+        password: "poules",
         
     },
     {
         username: "stanislas",
-        password: "skirikipapa",
+        password: "Chevaux",
         
     },
     {
@@ -29,7 +29,7 @@ const users = userModel.insertMany([
     },
     {
         username: "richard",
-        password: "iminthegettho",
+        password: "iminGermany",
         
     },
     {
@@ -44,7 +44,7 @@ const users = userModel.insertMany([
 ])
 const image = imageModel.insertMany([
     {
-        url: "'https://fr.web.img2.acsta.net/c_310_420/pictures/19/09/13/14/45/4570058.jpg',"
+        imgCompress: "'https://fr.web.img2.acsta.net/c_310_420/pictures/19/09/13/14/45/4570058.jpg',"
     },
 
 ])
