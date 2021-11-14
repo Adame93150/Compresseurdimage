@@ -7,10 +7,11 @@ const expressValidator = require("express-validator");
 
 const signup = async (req, res) => {
     try {
-        // const email = req.body
+       
         const username = req.body.username
         const password = bcryptjs.hashSync(req.body.password)
-        const user = await userModel.create({ username, password})
+        const email = req.body.email
+        const user = await userModel.create({ username, password,email})
 
         res.json({ message: "User was created!", user })
     } catch (error) {
