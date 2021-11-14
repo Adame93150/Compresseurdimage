@@ -28,26 +28,3 @@ app.listen(port, () => {
     console.log("The server is waiting for requests")
 })
 
-// email
-var transporter = nodemailer.createTransport({
-    service: 'gmail',
-    auth: {
-      user: 'ezka.mehdi@gmail.com',
-      pass: 'Xblastv2'
-    }
-  });
-  
-  var mailOptions = {
-    from: 'ezka.mehdi@gmail.com',
-    to: 'morocozik@gmail.com',
-    subject: 'Imagein inscription completée',
-    text: "Bravo pour votre inscription a ImageIn \n votre identifiant est username: \n votre mot de passe est password: "
-  };
-  
-  transporter.sendMail(mailOptions, function(error, info){
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
