@@ -172,15 +172,15 @@ function Compresseur() {
           {compressedImage && (
 
             <MDBBtn>
-
-                <a href={compressedImage} download={fileName}>
+              
+                <a className="Blanc" href={compressedImage} download={fileName}>
 
                   {" "}
 
                   Download Image
 
                 </a> 
- 
+              
               </MDBBtn> 
  
             )} 

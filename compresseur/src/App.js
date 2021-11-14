@@ -8,8 +8,7 @@ import Contact from "./Pages/Contact";
 import Notfound from "./Pages/Notfound";
 import SignIn from "./Pages/SignIn";
 import Signup from "./Pages/Signup";
-import CompresseurV from "./Pages/CompresseurV";
-import mesImages from "./Pages/mesImages";
+import mesImages from "./Pages/MesImages";
 
 
 
@@ -17,15 +16,14 @@ import mesImages from "./Pages/mesImages";
 
 
 const App = () => {
-  const logout = () => {
-    localStorage.removeItem("token")
-}
+//   const logout = () => {
+//     localStorage.removeItem("token")
+// }
   return (
     
        <BrowserRouter>
             <Switch>
-                <Route path="/" exact component={Accueil} />
-                <Route path="/c-compresseurV" exact component={CompresseurV} />
+                <Route path="/" exact component={Accueil} />        
                 <Route path="/c-compressor" exact component={Compressor}/>
                 <Route path="/Contact" exact component={Contact}/>
                 <Route path="/m-mesImages" exact component={mesImages}/>

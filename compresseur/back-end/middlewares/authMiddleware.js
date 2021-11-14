@@ -2,6 +2,26 @@ const userModel = require("../models/user")
 const jwt = require("jsonwebtoken")
 const config = require("../config.js")
 
+
+// const continueIfUserExists = async (req, res, next) =>  {
+//     try {
+//         const email = req.body.email
+//         const user = await userModel.findOne({ email })
+
+//         if (user) {
+//             req.user = user
+//             next()
+//         } else {
+//             res.status(400).json({ errorMessage: "User was not found" })
+//         }
+
+//     } catch (err) {
+//         console.error(err)
+
+//         res.status(500).json({ errorMessage: "There was a problem :(" })
+//     }
+// } 
+
 const verifyToken = async (req, res, next) => {
     try {
         const token = req.headers.authorization.split(" ")[1]
@@ -21,4 +41,4 @@ const verifyToken = async (req, res, next) => {
 }
 
 
-module.exports = { verifyToken }
+module.exports = { verifyToken, }

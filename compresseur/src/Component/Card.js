@@ -1,7 +1,7 @@
 import React from 'react';
 import { MDBCard, MDBCardTitle, MDBBtn, MDBCardGroup, MDBCardImage, MDBCardText, MDBCardBody } from "mdbreact";
 
-const Card = () => {
+const CardX = () => {
     return (
         <MDBCardGroup>
           <MDBCard>
@@ -52,4 +52,4 @@ const Card = () => {
       );
 };
 
-export default Card;
+export default CardX;

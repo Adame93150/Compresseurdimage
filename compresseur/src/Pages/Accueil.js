@@ -11,10 +11,9 @@ const Accueil = () => {
         <div className="Acceuil">
            
             <NAV></NAV>
-        <img className="imagelogo" src={logo} alt="logo" />
-        <h2 className="titre">imageIn</h2>
-        <p className="paragraphe"> Compressez vos images jpg ou png ou alors compressez vos vidéos 
-         simplement avec la meilleure qualité.
+        <img className="imagelogo" src={logo} alt="logo de ImageIn" />
+        <h1 className="titre">imageIn</h1>
+        <p className="paragraphe"> Compressez vos images jpg ou png simplement avec la meilleure qualité.
         </p>
          <Navigation></Navigation>
         </div>

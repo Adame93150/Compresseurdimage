@@ -19,9 +19,6 @@ const NAV = () => {
           <MDBDropdownLink href="/">Accueil</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>
-          <MDBDropdownLink href="c-convertisseur">Convertisseur</MDBDropdownLink>
-        </MDBDropdownItem>
-        <MDBDropdownItem>
           <MDBDropdownLink href="c-compressor">Compresseur</MDBDropdownLink>
         </MDBDropdownItem>
         <MDBDropdownItem>

@@ -7,6 +7,7 @@ const CSignup = () => {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("");
   const [userCreated, setUserCreated] = useState(false);
   
   useEffect(() => {
@@ -19,7 +20,7 @@ const CSignup = () => {
   const signupPost = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:8001/auth/signup", { username, password })
+      const response = await axios.post("http://localhost:8001/auth/signup", { username, password,email })
       
       console.log(response);
       if (response.status === 200) {
@@ -45,6 +46,11 @@ const CSignup = () => {
 <div class="mb-3">
   <label for="exampleInputPassword1" class="form-label">Password</label>
   <input type="password" class="form-control" id="exampleInputPassword1" onChange={(e) => setPassword(e.target.value)}/>
+</div>
+<div class="mb-3">
+  <label for="exampleInputEmail1" class="form-label">Email</label>
+  <input class="form-control" id="exampleInputPseudo" aria-describedby="pseudo" onChange={(e) => setEmail(e.target.value)}/>
+  <div id="textUser" class="form-text"></div>
 </div>
 <button type="submit" class="btn btn-primary">SignUp</button>
 </form>  
