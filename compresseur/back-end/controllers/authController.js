@@ -28,9 +28,9 @@ const signup = async (req, res) => {
               
               var mailOptions = {
                 from: 'ezka.mehdi@gmail.com',
-                to: 'morocozik@gmail.com',
+                to: req.body.email,
                 subject: 'Imagein inscription completée',
-                text: "Bravo pour votre inscription a ImageIn \n Identifiant:  "+ user.username+ "\n Mot de passe : "+ req.body.password+"\n Vous pouvez des a présent vous connecter."
+                text: "Bravo pour votre inscription a ImageIn \nIdentifiant:  "+ user.username+ "\nMot de passe : "+ req.body.password+"\nVous pouvez des a présent vous connecter."
               };
               
               transporter.sendMail(mailOptions, function(error, info){

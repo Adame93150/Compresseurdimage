@@ -21,8 +21,8 @@ const CSignin = () => {
         console.log('je suis ici');
         const response = await axios.post("http://localhost:8001/auth/login", { username, password })
         if (response.status === 200) {
-            localStorage.setItem("token", response.data.token)
-            history.push("/")
+          localStorage.setItem("token", response.data.token)
+          history.push("/")
         }
     } catch (error) {
         console.error(error)

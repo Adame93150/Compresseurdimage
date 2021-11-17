@@ -15,7 +15,7 @@ function Compresseur() {
 
   const [fileName, setFileName] = useState("");
 
-
+  let compressOk = false;
 
   const handle = (e) => {
 
@@ -95,7 +95,7 @@ function Compresseur() {
 
               {origImageFile ? (
 
-                <Image src={origImageFile}></Image>
+                <Image  id="imgSize" src={origImageFile}></Image>
 
               ) : (
 
@@ -104,7 +104,7 @@ function Compresseur() {
               )}
 
             </Item>
-
+                    
           </Grid.Column>
 
           <Grid.Column width={4}>
@@ -132,6 +132,25 @@ function Compresseur() {
                 onClick={(e) => {
 
                   handleCompressImage(e);
+                   //poids image         
+                  let myImg = document.querySelector("#imgSize");
+                  let resultSize;
+                  let realWidth = myImg.naturalWidth;
+                  let realHeight = myImg.naturalHeight;
+                  resultSize = parseInt( (((realWidth * realHeight) * 3 ) / 1024) );
+                  var p = document.createElement("p");
+                  p.style.color = "white";
+                  p.style.fontSize =" 32px";
+                  p.style.backgroundColor ="rgba(0,0,0,0.5)";
+                  p.style.textAlign ="center";
+                  p.style.border = " 1px solid white";
+                  p.style.padding = "3px";
+                  p.style.borderRadius = "10px";
+                  const texte= "Original width=" + realWidth + ", " + "Original height=" + realHeight+ " Original size="+resultSize+" ko";
+                  p.innerHTML = texte;
+                  document.body.appendChild(p);
+                  
+                              // alert("Original width=" + realWidth + ", " + "Original height=" + realHeight+ "Original size="+resultSize );
 
                 }}
 
@@ -157,7 +176,7 @@ function Compresseur() {
 
               {compressedImage ? (
 
-                <Image src={compressedImage}></Image>
+                <Image  src={compressedImage}></Image>
 
               ) : (
 
@@ -180,7 +199,6 @@ function Compresseur() {
                   Download Image
 
                 </a> 
-              
               </MDBBtn> 
  
             )} 
@@ -193,9 +211,11 @@ function Compresseur() {
       </Container>
 
     </div>
-
+      
   );
-
+                          
+                              
+  
   
 
 }

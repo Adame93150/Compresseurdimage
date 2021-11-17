@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter,Switch,Route} from "react-router-dom";
+import {BrowserRouter,Switch,Route,Link} from "react-router-dom";
 import Accueil from "./Pages/Accueil";
 
 import Compressor from "./Pages/Compressor";
@@ -16,9 +16,8 @@ import mesImages from "./Pages/MesImages";
 
 
 const App = () => {
-//   const logout = () => {
-//     localStorage.removeItem("token")
-// }
+
+
   return (
     
        <BrowserRouter>

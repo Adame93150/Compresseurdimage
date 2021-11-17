@@ -6,6 +6,7 @@ import NAV from '../Component/NAV';
 
 
 const Accueil = () => {
+    
     return (
         
         <div className="Acceuil">
