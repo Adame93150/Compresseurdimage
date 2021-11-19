@@ -6,11 +6,13 @@ import logo from '../img/logo.png'
 const Contact = () => {
     return (
         <div>
-            
+            //Appel du component NAV
             <NAV></NAV>
+            //Importation d'une image depuis "../img/logo.png"
             <img className="imagelogo" src={logo} alt="logo" />
-            
+            //Creation d'un titre 
             <h1 className="titre">Contact</h1>
+            //Creation de plusieurs paragraphe
         <p className="p2"> Ezka Mehdi
         </p>
         <p className="p2"> Mail : ezka.mehdi@gmail.com
