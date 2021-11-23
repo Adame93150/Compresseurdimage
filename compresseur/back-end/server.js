@@ -6,6 +6,7 @@ const nodemailer = require('nodemailer');
 
 const cors = require("cors")
 
+// connexion a la base de donnée
 mongoose.connect("mongodb://localhost:27017/imageIn", (err) => {
     if (err) {
         console.error(err);
@@ -17,6 +18,7 @@ mongoose.connect("mongodb://localhost:27017/imageIn", (err) => {
 const port = 8001
 
 const app = express()
+
 app.use(cors())
 
 app.use(express.json())

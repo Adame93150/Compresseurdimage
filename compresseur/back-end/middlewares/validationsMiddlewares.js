@@ -5,7 +5,7 @@ const validationLogin = [
     expressValidator.body("password").exists().isString(),
 ] 
 const validationSignup = [
-    
+    expressValidator.body("email").exists().isEmail(),
     expressValidator.body("password").exists().isString().custom(value => {
         const schema = new passwordValidator()
 

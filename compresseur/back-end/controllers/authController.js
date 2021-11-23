@@ -17,7 +17,7 @@ const signup = async (req, res) => {
         res.json({ message: "User was created!", user })
         pretPourMail = true
         if(pretPourMail) {
-            // email
+            // envoi des identifiants par email  
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {

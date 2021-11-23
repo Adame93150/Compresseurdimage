@@ -8,13 +8,13 @@ const SignIn = () => {
 
         <div>
             <NAV></NAV>
-<img className="imagelogo" src={logo} alt="logo" />
+            <img className="imagelogo" src={logo} alt="logo" />
             <h2 className="titleForm">
-            Deja inscrit? Connectez-vous
+                Deja inscrit? Connectez-vous
             </h2>
             <CSignin></CSignin>
-            
-            
+
+
         </div>
     );
 };

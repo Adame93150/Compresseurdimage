@@ -15,31 +15,36 @@ const users = userModel.insertMany([
     {
         username: "mehdi",
         password: "poules",
+        email:"kle@gmail.com"
         
     },
     {
         username: "stanislas",
         password: "Chevaux",
+        email:"iole@gmail.com"
         
     },
     {
         username: "hubert",
         password: "bonsoirparis",
+        email:"le@gmail.com"
         
     },
     {
         username: "richard",
         password: "iminGermany",
+        email:"kale@gmail.com"
         
     },
     {
         username: "eustache",
         password: "kekeke",
+        email:"kabrie@gmail.com"
     },
     {
         username: "jean eudes",
         password: "kariiim",
-        
+        email:"kabriole@gmail.com"
     },
 ])
 const image = imageModel.insertMany([

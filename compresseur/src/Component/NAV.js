@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { NavLink } from 'react-router-dom';
 import { MDBDropdown, MDBDropdownMenu, MDBDropdownToggle, MDBDropdownItem, MDBDropdownLink } from 'mdb-react-ui-kit';
 import { MDBBtn } from 'mdb-react-ui-kit';
 
@@ -9,7 +8,7 @@ const NAV = () => {
   const [userConnected, setUserConnected] = useState(false);
   const [informDisconnection, setInformDisconnection] = useState(false);
 
-  
+
   useEffect(() => {
     const token = localStorage.getItem("token") || false
 
@@ -29,7 +28,7 @@ const NAV = () => {
   return (
     <MDBDropdown className="menu">
       <MDBDropdownToggle tag='a' className='btn btn-primary'>
-      Menu
+        Menu
       </MDBDropdownToggle>
       {userConnected ? (
         <>
@@ -48,7 +47,7 @@ const NAV = () => {
         <MDBDropdownItem>
           <MDBDropdownLink href="c-compressor">Compresseur</MDBDropdownLink>
         </MDBDropdownItem>
-        { userConnected && 
+        {userConnected &&
           <MDBDropdownItem>
             <MDBDropdownLink href="m-mesImages">Mes Images</MDBDropdownLink>
           </MDBDropdownItem>
@@ -59,11 +58,11 @@ const NAV = () => {
       </MDBDropdownMenu>
       {informDisconnection &&
         <div className="row">
-            <div className="offset-3 col-6 mx-auto">
-                <div className="alert alert-danger" role="alert">
-                    Your session was disconnected! Please try loging in again
-                </div>
+          <div className="offset-3 col-6 mx-auto">
+            <div className="alert alert-danger" role="alert">
+              Your session was disconnected! Please try loging in again
             </div>
+          </div>
         </div>
       }
     </MDBDropdown>

@@ -15,7 +15,7 @@ function Compresseur() {
 
   const [fileName, setFileName] = useState("");
 
-  let compressOk = false;
+  // let compressOk = false;
 
   const handle = (e) => {
 
@@ -95,7 +95,7 @@ function Compresseur() {
 
               {origImageFile ? (
 
-                <Image  id="imgSize" src={origImageFile}></Image>
+                <Image  id="imgSize1" src={origImageFile}></Image>
 
               ) : (
 
@@ -132,23 +132,39 @@ function Compresseur() {
                 onClick={(e) => {
 
                   handleCompressImage(e);
-                   //poids image         
-                  let myImg = document.querySelector("#imgSize");
-                  let resultSize;
-                  let realWidth = myImg.naturalWidth;
-                  let realHeight = myImg.naturalHeight;
-                  resultSize = parseInt( (((realWidth * realHeight) * 3 ) / 1024) );
-                  var p = document.createElement("p");
-                  p.style.color = "white";
-                  p.style.fontSize =" 32px";
-                  p.style.backgroundColor ="rgba(0,0,0,0.5)";
-                  p.style.textAlign ="center";
-                  p.style.border = " 1px solid white";
-                  p.style.padding = "3px";
-                  p.style.borderRadius = "10px";
-                  const texte= "Original width=" + realWidth + ", " + "Original height=" + realHeight+ " Original size="+resultSize+" ko";
-                  p.innerHTML = texte;
-                  document.body.appendChild(p);
+                   //poids image  
+                   setTimeout(myImg, 1500);
+                   function myImg(){
+                    let myImg = document.querySelector("#imgSize");
+                    let myImg1 = document.querySelector("#imgSize1");
+                    let resultSize ;
+                    let resultSize1 ;
+                    console.log('taille src:'+myImg);
+                    let realWidth = myImg.naturalWidth;
+                    let realHeight = myImg.naturalHeight;
+                    let realWidth1 = myImg1.naturalWidth;
+                    let realHeight1 = myImg1.naturalHeight;
+                    resultSize = parseInt( (((realWidth * realHeight) * 1 ) / 1024) );
+                    resultSize1 = parseInt( (((realWidth1 * realHeight1) * 1 ) / 1024) );
+                    console.log(' resultSize:'+resultSize);
+                    console.log(' resultSize 1:'+resultSize1);
+                    let Pourcentage = parseInt( (resultSize * 100) / resultSize1 );
+                    Pourcentage = 100 - Pourcentage;
+                    var p = document.createElement("p");
+                    p.style.color = "black";
+                    p.style.width = "78%";
+                    p.style.margin ="-170px auto  0 auto";
+                    p.style.fontSize =" 32px";
+                    p.style.backgroundColor ="rgba(255,255,255,0.3)";
+                    p.style.textAlign ="center";
+                    p.style.border = " 0.4px solid white";
+                    p.style.padding = "3px";
+                    p.style.borderRadius = "7px";
+                    const texte= " width=" + realWidth + " px, " + " height=" + realHeight+ " px | Taux de compression= "+Pourcentage+" %";
+                    p.innerHTML = texte;
+                    document.body.appendChild(p);
+                   }       
+                  
                   
                               // alert("Original width=" + realWidth + ", " + "Original height=" + realHeight+ "Original size="+resultSize );
 
@@ -176,7 +192,7 @@ function Compresseur() {
 
               {compressedImage ? (
 
-                <Image  src={compressedImage}></Image>
+                <Image id="imgSize" src={compressedImage}></Image>
 
               ) : (
 
