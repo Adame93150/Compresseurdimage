@@ -11,7 +11,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; import
 
 ReactDOM.render(
   <React.StrictMode>
-  //permet de faire appel au fichier App permettant d'afficher le projet
     <App />
   </React.StrictMode>,
   document.getElementById('root')

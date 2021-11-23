@@ -3,7 +3,7 @@ import React from 'react';
 const Notfound = () => {
     return (
         <div>
-            //creation d'un titre error
+            
             <h2>Error 404</h2>
         </div>
     );
