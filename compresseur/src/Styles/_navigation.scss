@@ -1,6 +1,8 @@
+
+//Importation d'une police avec une url
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
-
+//permet de modifier le style de la classe navigation
 .navigation {
    margin-top: 10px;
    text-align: center;
@@ -9,7 +11,7 @@
     
 
 
-
+	//permet de modifier le style de la balise a qui a pour classe navigation
     a{
 
     
@@ -34,14 +36,14 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #9752cc;
     }
-
+	//permet de modifier le style de la balise a qui permet de spécifier l'apparence d'un élément au moment où l'utilisateur le survole avec le pointeur, sans nécessairement l'activer
     a:hover {
         background:linear-gradient(to bottom, #e37fe8 5%, #dfbdfa 100%);
 	background-color:#e37fe8;
     }
     
 }
-
+//permet de modifier le style de la classe menu
 .menu{
 margin-top: 5px;
 margin-left: 80%;

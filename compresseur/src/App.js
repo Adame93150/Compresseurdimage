@@ -1,7 +1,12 @@
 import React from "react";
+<<<<<<< HEAD
 import {BrowserRouter,Switch,Route,} from "react-router-dom";
+=======
+//importaton de la librairie react router dom
+import {BrowserRouter,Switch,Route,Link} from "react-router-dom";
+//importation des differents components
+>>>>>>> 30f32b39363db08ee286bdaa3e8cba797c4dac28
 import Accueil from "./Pages/Accueil";
-
 import Compressor from "./Pages/Compressor";
 import Contact from "./Pages/Contact";
 
@@ -19,7 +24,7 @@ const App = () => {
 
 
   return (
-    
+    //creation des routes
        <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Accueil} />        

@@ -1,5 +1,8 @@
+//permet d'importer le fichier qui gere les autres fichiers scss
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
 
+
+//permet de definir des variable de couleur et de les appeler par la suite
 $font-1: "Poppins", sans-serif;
 
 $color-1: #61dafb;
@@ -12,6 +15,8 @@ $color-4: rgb(32, 35, 42);
   margin: 0;
   padding: 0;
 }
+
+//permet de modifier la balise body
 body {
   min-height: 100%;
   background: url('../img/paysage.jpg') no-repeat center center fixed;
@@ -23,14 +28,14 @@ body {
   
   
 }
-
+//permet de modifier le style de la balise h1
 h1{
     text-align: center;
     display: block;
   
 
 }
-
+//permet de mofidier le style de la balise h2
 h2{
   background-color: #61dafb;
   width: 50%;
@@ -38,7 +43,7 @@ h2{
   text-align: center;
     display: block;
 }
-
+//permet de modifier le style de l'identifiant blanc 
 #Blanc{
   color:white
 }
