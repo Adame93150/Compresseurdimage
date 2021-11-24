@@ -8,7 +8,7 @@ import * as yup from 'yup';
 
 const CSignup = () => {
   let history = useHistory()
-
+//  const pour 
   const [userCreated, setUserCreated] = useState(false);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const CSignup = () => {
     }
   }, [])
 
-
+// initialisation des champs 
   const formik = useFormik({
     initialValues: {
       username: '',
@@ -41,11 +41,13 @@ const CSignup = () => {
         console.error(error)
       }
     },
+    //Yup pour les regex de validation pour le sign up 
     validationSchema: yup.object().shape({
       username: yup.string().required(),
       password: yup.string().required().matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{4,}$/, "Passwords must have at least 4 characters, 1 number, 1 upper and 1 lowercase"),
       email: yup.string().email().required()
     }),
+    // seulement au onChange que le regex s'applique
     validateOnChange: false
   });
   console.log('errors : ', formik.errors)
@@ -55,7 +57,7 @@ const CSignup = () => {
     return ("User created!")
   } else {
     return (
-
+// formulaire avec formik pour le changement des state
       <form className="formStyle" onSubmit={formik.handleSubmit}>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Pseudo</label>
