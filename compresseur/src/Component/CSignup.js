@@ -61,18 +61,18 @@ const CSignup = () => {
       <form className="formStyle" onSubmit={formik.handleSubmit}>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Pseudo</label>
-          <input class="form-control" aria-describedby="pseudo" id="username" name="username" type="text" value={formik.values.username} onChange={formik.handleChange} />
+          <input class="form-control"   name="username" type="text" value={formik.values.username} onChange={formik.handleChange} />
           {formik.errors.username && <small>{formik.errors.username}</small>}
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" id="password" name="password" type="text" value={formik.values.password} onChange={formik.handleChange} />
+          <input type="password" class="form-control" name="password"  value={formik.values.password} onChange={formik.handleChange} />
           {formik.errors.password && <small>{formik.errors.password}</small>}
         </div>
 
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input class="form-control" aria-describedby="pseudo" id="email" name="email" type="text" value={formik.values.email} onChange={formik.handleChange} />
+          <input class="form-control"  name="email" type="text" value={formik.values.email} onChange={formik.handleChange} />
           {formik.errors.email && <small>{formik.errors.email}</small>}
         </div>
         <button type="submit" class="btn btn-primary">SignUp</button>
