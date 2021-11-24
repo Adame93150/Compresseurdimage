@@ -15,7 +15,7 @@ function Compresseur() {
 
   const [fileName, setFileName] = useState("");
 
-  // let compressOk = false;
+  
 
   const handle = (e) => {
 
