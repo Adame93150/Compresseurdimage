@@ -21,11 +21,11 @@ function Compresseur() {
 
     const imageFile = e.target.files[0];
     
-
+  // Taille image
     setOrigImage(imageFile);
-
+  // Url de l'image
     setOrigImageFile(URL.createObjectURL(imageFile));
-
+  // nom de l'image
     setFileName(imageFile.name);
 
 
@@ -39,7 +39,7 @@ function Compresseur() {
 
 
     const options = {
-
+      //configuration de la compression 
       maxSizeMB: 1,
 
       maxWidthOrHeight: 500,

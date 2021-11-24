@@ -9,9 +9,6 @@ import * as yup from 'yup';
 const CSignup = () => {
   let history = useHistory()
 
-  // const [username, setUsername] = useState("");
-  // const [password, setPassword] = useState("");
-  // const [email, setEmail] = useState("");
   const [userCreated, setUserCreated] = useState(false);
 
   useEffect(() => {

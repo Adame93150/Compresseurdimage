@@ -9,6 +9,7 @@ const mesImages = () => {
 
             <NAV></NAV>
             <img className="imagelogo" src={logo} alt="logo" />
+            <h1 className = "titre"> Mes Images recentes</h1>
             <Card></Card>
         </div>
     );

@@ -2,7 +2,8 @@ const express = require("express")
 const mongoose = require("mongoose")
 const authRoutes = require("./routes/authRoutes")
 const usersRoutes = require("./routes/usersRoutes")
-const nodemailer = require('nodemailer');
+const imageRoutes = require("./routes/imageRoutes")
+
 
 const cors = require("cors")
 
@@ -25,6 +26,7 @@ app.use(express.json())
 
 app.use("/auth", authRoutes)
 app.use("/users", usersRoutes)
+app.use("/images", imageRoutes)
 
 app.listen(port, () => {
     console.log("The server is waiting for requests")
