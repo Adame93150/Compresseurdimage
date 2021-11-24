@@ -161,7 +161,7 @@ function Compresseur() {
                     p.style.border = " 0.4px solid white";
                     p.style.padding = "3px";
                     p.style.borderRadius = "7px";
-                    const texte= " width=" + {realWidth} + 'px,' + " height=" + {realHeight} + " px | Taux de compression= "+ {Pourcentage} +" %";
+                    const texte= "width=" + {realWidth} + 'px,' + " height=" + {realHeight} + " px | Taux de compression= "+ {Pourcentage} + " %";
                     p.innerHTML = texte;
                     document.body.appendChild(p);
                    }       
