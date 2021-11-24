@@ -50,6 +50,6 @@ const users = userModel.insertMany([
 const image = imageModel.insertMany([
     {
         imgCompress: "'https://fr.web.img2.acsta.net/c_310_420/pictures/19/09/13/14/45/4570058.jpg',"
-    },
+    }
 
 ])
