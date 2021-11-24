@@ -20,7 +20,7 @@ const App = () => {
 
 
   return (
-    //creation des routes
+    //creation des routes avec une redirection  vers la page notfound si l'URL n'est pas correct
        <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Accueil} />        

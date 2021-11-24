@@ -6,9 +6,10 @@ import logo from '../img/logo.png'
 const Contact = () => {
     return (
         <div>
+            
             <NAV></NAV>
         
-            <img className="imagelogo" src={logo} alt="logo" />
+            <img className="imagelogo" src={logo} alt="logo ImageIn" />
 
             <h1 className="titre">Contact</h1>
             <p className="p2"> Ezka Mehdi
