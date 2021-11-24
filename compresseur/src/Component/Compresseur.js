@@ -167,7 +167,7 @@ function Compresseur() {
                    }       
                   
                   
-                         
+                              // alert("Original width=" + realWidth + ", " + "Original height=" + realHeight+ "Original size="+resultSize );
 
                 }}
 
