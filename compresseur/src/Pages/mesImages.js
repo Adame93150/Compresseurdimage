@@ -3,7 +3,7 @@ import Card from '../Component/Card'
 import NAV from '../Component/NAV';
 import logo from '../img/logo.png'
 
-const mesImages = () => {
+const MesImages = () => {
     return (
         <div>
 
@@ -15,4 +15,4 @@ const mesImages = () => {
     );
 };
 
-export default mesImages;
+export default MesImages;
