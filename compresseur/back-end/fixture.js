@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const userModel = require("./models/user")
 const imageModel = require("./models/image")
 
+// initialisation de la base de donnée avec Mongoose (connexion)
 mongoose.connect("mongodb://localhost:27017/imageIn", (err) => {
     if (err) {
         console.error(err);
@@ -9,6 +10,8 @@ mongoose.connect("mongodb://localhost:27017/imageIn", (err) => {
         console.log("I'm connected to the database")
     }
 })
+
+// creation de la collection avec un insert Many (en dur)
 
 const users = userModel.insertMany([
     

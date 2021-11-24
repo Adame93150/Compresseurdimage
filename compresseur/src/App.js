@@ -1,6 +1,6 @@
 import React from "react";
 //importaton de la librairie react router dom
-import {BrowserRouter,Switch,Route,Link} from "react-router-dom";
+import {BrowserRouter,Switch,Route,} from "react-router-dom";
 //importation des differents components
 import Accueil from "./Pages/Accueil";
 import Compressor from "./Pages/Compressor";
@@ -9,7 +9,7 @@ import Contact from "./Pages/Contact";
 import Notfound from "./Pages/Notfound";
 import SignIn from "./Pages/SignIn";
 import Signup from "./Pages/Signup";
-import mesImages from "./Pages/mesImages";
+import mesImages from "./Pages/MesImages";
 
 
 

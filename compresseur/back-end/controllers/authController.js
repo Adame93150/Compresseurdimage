@@ -6,10 +6,13 @@ const expressValidator = require("express-validator");
 const nodemailer = require('nodemailer');
 
 var pretPourMail = false
+
 const signup = async (req, res) => {
     try {
        
+        
         const username = req.body.username
+        // hashage du mot de passe dans le back
         const password = bcryptjs.hashSync(req.body.password)
         const email = req.body.email
         const user = await userModel.create({ username, password,email})
@@ -41,6 +44,7 @@ const signup = async (req, res) => {
                 }
               });
             };
+
     } catch (error) {
         console.log("Error: ", error)
         res.status(500).json({ message: "There was an error while treating the request" })
@@ -55,11 +59,12 @@ const login = async (req, res) => {
 
         const username = req.body.username
         const user = await userModel.findOne({ username })
+        //comparaison du mot de passe avec le mot de passe haché
         const result = bcryptjs.compareSync(req.body.password, user.password)
 
 
 
-
+        // si mot de passe correspondant creation du token
         if (result) {
             const token = jwt.sign(
                 {

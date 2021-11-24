@@ -1,9 +1,11 @@
 const expressValidator = require("express-validator");
 const passwordValidator = require("password-validator")
 
+// validation back du login (securité)
 const validationLogin = [
     expressValidator.body("password").exists().isString(),
 ] 
+// validation back du sign up
 const validationSignup = [
     expressValidator.body("email").exists().isEmail(),
     expressValidator.body("password").exists().isString().custom(value => {

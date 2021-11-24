@@ -3,6 +3,7 @@ const router = express.Router()
 const { signup, login } = require("../controllers/authController")
 const {validationSignup,validationLogin} = require("../middlewares/validationsMiddlewares")
 
+// routes pour l'authentification avec les validations 
 
 router.post("/signup",validationSignup,signup)
 

@@ -4,6 +4,7 @@ const { getImage} = require("../controllers/imageController")
 
 
 
+//route pour recuperer l'image (pas terminée)
 
 router.get("/", getImage)
 

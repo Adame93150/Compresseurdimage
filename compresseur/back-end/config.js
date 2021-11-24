@@ -1,3 +1,4 @@
+// code que l'on reutilise
 const config = {
     secret: "monmotsecretImage",
     port: 8000,

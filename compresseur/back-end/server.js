@@ -16,6 +16,7 @@ mongoose.connect("mongodb://localhost:27017/imageIn", (err) => {
     }
 })
 
+
 const port = 8001
 
 const app = express()
@@ -24,10 +25,12 @@ app.use(cors())
 
 app.use(express.json())
 
+// routes du back end
 app.use("/auth", authRoutes)
 app.use("/users", usersRoutes)
 app.use("/images", imageRoutes)
 
+// le serveur ecoute au port 8001
 app.listen(port, () => {
     console.log("The server is waiting for requests")
 })
