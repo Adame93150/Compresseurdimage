@@ -49,7 +49,8 @@ function Compresseur() {
     };
 
 
-
+//Condition qui permet de verifier le poids de l'image, si l'image voulant etre compresse est plus grande ou egale au poids de l'image autorisé
+//elle affiche une allerte
     if (options.maxSizeMB >= origImage / 1024) {
 
       alert("Image is too small, cant be compressed");
@@ -63,13 +64,13 @@ function Compresseur() {
     let output;
 
     imageCompression(origImage, options).then((x) => {
-
+    //la variable 'x' est le resultat de la compression de l'image
       output = x;
 
 
-
+      //permet de generer le lien afin de pouvoir la telecharger 
       const downloadLink = URL.createObjectURL(output);
-
+      
       setCompressedImage(downloadLink);
 
     });
